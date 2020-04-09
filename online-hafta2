@@ -25,7 +25,8 @@ pprint(p2)
 print("\n")
 print("------------------------")
 print("\n")
-
+ 
+ 
 #Bir ifadeyi çarpanlarına ayırıyoruz(Import Factor ile) ve çarpanlarına ayrılan ifadeyi açmak(expand ile)
 expr = (x**2) - (y**2)
 pprint(factor(expr))
@@ -110,6 +111,7 @@ print("\n")
 gauss_function = part_1*part_2
 pprint(gauss_function)
 
+
 print("------------------------")
 print("\n")
 #bu fonksiyondaki sigma ve mu ifadelerine değer vererek grafik haline getiriyoruz(plot ile) sonda yazan kısımla da grafiğe isim verdik
@@ -127,6 +129,7 @@ for value in range(-5, 5):
 print("\n")
 print("------------------------")
 print("\n")
+
 
 #burada da grafik haline getirdik(plot ile)
 
