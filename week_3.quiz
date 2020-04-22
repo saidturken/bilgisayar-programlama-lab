@@ -1,0 +1,22 @@
+from sympy import Symbol, Limit, exp, pi, Integral, sqrt
+from sympy import *
+
+#  (S(t1+delta) + S(t1) / delta)  limit ile türev alacağımız formul.
+
+#video1
+
+t = Symbol('t')
+t1 = Symbol('t1')
+delta_t = Symbol('delta_t')
+
+St = 5*t**2 + 2*t + 8   #türevi alınacak denklem
+
+St1= St.subs({t:t1})       #t gördüğümüz yere t1 yazıyoruz
+St1_delta = St.subs({t:t1+delta_t})   #t gördüğümüz yere t1+delta yazıyoruz
+
+#video2
+
+x = Symbol('X')
+p = exp(-(x-10) ** 2 / 2) / sqrt(2*pi)
+integral_result = Integral(p, (x, 11, 12)).doit().evalf() #x'in üst değeri = 12, alt değeri = 11 e göre integrali
+print("İntegral Sonucu = ", integral_result)
